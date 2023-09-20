@@ -1,0 +1,80 @@
+.collections {
+    color: $white;
+}
+.new-colletions {
+    width: 100%;
+
+    &__title {
+        margin-top: 5.8125rem;
+        margin-bottom: 6.25rem;
+    }
+
+    &__title::after {
+        bottom: -3.125rem;
+    }
+
+    &__items {
+        padding: 0 5rem 5.8125rem 5rem;
+    }
+
+    &__catalog-link {
+        /* 880/1920 */
+        padding-top: 30.25rem;
+        padding-bottom: 6.25rem;
+        background-image: image-set(
+            url("../images/new-collections-bg/new-collections-bg-big.webp") 2x,
+            url("../images/new-collections-bg/new-collections-bg-small.webp") 1x
+        );
+        background-repeat: no-repeat;
+        background-position: top left;
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    &__catalog-title {
+        margin-bottom: 3.75rem;
+    }
+
+    &__btn {
+        width: 8.5625rem;
+        height: 2.9375rem;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 1910px) {
+        display: flex;
+        min-height: 45.625rem;
+
+        &__cards {
+            width: 54.166667vw;
+        }
+
+        &__catalog-link {
+            width: 45.833333vw;
+        }
+    }
+}
+
+@media (min-width: 1910px) {
+    .toggle-card-1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1346px) {
+    .toggle-card-1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1040px) {
+    .toggle-card-1 {
+        display: block;
+    }
+}
+
+@media (max-width: 732px) {
+    .toggle-card-1 {
+        display: none;
+    }
+}

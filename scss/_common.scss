@@ -1,0 +1,83 @@
+.container {
+    max-width: 81.875rem;
+    padding: 0 6.25rem;
+    margin: 0 auto;
+
+    @media (max-width: 890px) {
+        padding: 0 1.25rem;
+    }
+
+    @media (max-width: 321px) {
+        padding: 0 0.625rem;
+    }
+}
+.wrapper {
+    font-family: PT Sans;
+    font-size: 0.875rem;
+}
+
+.main {
+    width: 100%;
+}
+
+body {
+    background-color: $black;
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+.text {
+    color: $white;
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.title {
+    color: $white;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    width: 7.5rem;
+    height: 0.0625rem;
+    background-color: $white;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.875rem;
+}
+
+.button {
+    border: 1px solid $white;
+    background-color: transparent;
+    color: $white;
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0.1125rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+}

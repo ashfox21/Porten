@@ -1,0 +1,17 @@
+.our-brands {
+    background-color: #0F0F0F;
+    min-height: 22.625rem;
+    padding: 3.75rem 0 5rem;
+    &__title {
+        margin-bottom: 5rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 1.875rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+

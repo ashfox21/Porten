@@ -1,0 +1,62 @@
+.old-collections {
+
+    &__image {
+        width: 100%;
+        background-image: image-set(url("../images/old-collections-bg/old-collections-bg-big.webp") 2x, 
+        url("../images/old-collections-bg/old-collections-bg-small.webp") 1x);
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        background-size: cover;
+        min-height: 37.5rem;
+    }
+
+    &__wrapper {
+        width: 100%;
+        padding: 6.25rem 20%; /* 284/1920 */
+    }
+
+    &__title {
+        margin-bottom: 5rem;
+        font-weight: 400;
+    }
+
+    &__text {
+        margin-bottom: 3.8125rem;
+        line-height: 150%;
+    }
+
+    &__btn {
+        width: 19.4375rem;
+        height: 2.9375rem;
+    }
+
+    @media (max-width: 530px) {
+        &__wrapper {
+            padding: 4.375rem 1.25rem; /* 284/1920 */
+        }
+
+        &__btn {
+            width: 15.3125rem;
+        }
+    }
+
+    @media (min-width: 1910px) {
+        display: flex;
+
+        &__image {
+            width: 45.833333vw;
+        }
+
+        &__wrapper {
+            width: 54.166667vw;
+            order: 2;
+            padding: 6.25rem 0;
+        }
+
+        &__text {
+            max-width: 29.4375rem;
+            margin: 0 auto 5rem;
+        }
+    }
+}

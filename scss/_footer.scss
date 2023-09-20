@@ -1,0 +1,129 @@
+.footer-top {
+    background-image: image-set(url("../images/footer-top-bg/footer-top-bg-big.webp") 2x, 
+    url("../images/footer-top-bg/footer-top-bg-small.webp") 1x);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+
+    &__wrapper {
+        display: flex;
+        min-height: 25rem;
+        padding-top: 5rem;
+        padding-bottom: 6.25rem;
+        flex-wrap: wrap;
+    }
+
+    &__about {
+        max-width: 350px;
+        margin-right: 31px;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    &__title::after {
+        content: none;
+    }
+
+    &__about-text {
+        text-align: left;
+        font-size: 0.875rem;
+    }
+
+    &__categories {
+        margin-bottom: 3.125rem;
+        margin-right: 5.75rem;
+        max-width: 17.9375rem;
+    }
+
+    &__categories-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.25rem;
+
+        flex-wrap: wrap;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    &__categories-button,
+    .form__button {
+        height: 2.5625rem;
+        padding: 0 1.25rem;
+        background-color: #0f0f0f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $light-gray;
+    }
+
+    &__mailing {
+        max-width: 21.875rem;
+    }
+
+    &__mailing-text {
+        text-align: left;
+        font-size: 0.875rem;
+        margin-bottom: 2.3125rem;
+    }
+}
+
+.form {
+    display: flex;
+
+    &__input {
+        background-color: rgba(255, 255, 255, 0.4);
+        width: 210px;
+        height: 42px;
+        padding: 0 20px;
+        color: $white;
+    }
+
+    &__input:focus {
+        background-color: rgba(183, 183, 183, 0.4);
+    }
+
+    &__input {
+        border: none;
+        outline:none;
+    }
+
+    &__input::placeholder {
+        color: $gray;
+        font-family: "PT Sans", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+
+.footer-bottom {
+
+    &__wrapper {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__rights, &__source {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: $light-gray;
+        transition: all 0.3s ease;
+    }
+
+    &__source:hover {
+        color: $white;
+    }
+}
+
+

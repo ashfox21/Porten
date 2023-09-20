@@ -1,0 +1,58 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
+    // grid-template-rows: repeat(auto-fit, 1fr);
+    column-gap: 47px;
+    row-gap: 50px;
+    justify-content: center;
+    position: relative;
+}
+.card {
+    cursor: pointer;
+    width: 260px; /* 260/1040 */
+    transition: all 0.4s ease;
+    padding-bottom: 5px;
+    z-index: 5;
+    // height: 730px;
+    &__image {
+        background-color: $dark-grey;
+        width: 100%; /* 260/1920 */
+        height: 325px;
+        margin-bottom: 1.5625rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__name {
+        margin-left: 5px;
+        font-family: "Playfair Display";
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0.625rem;
+        color: $white;
+    }
+
+    &__price {
+        margin-left: 5px;
+        color: $light-gray;
+        font-family: Playfair Display;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+.card:hover {
+    transform: scale(115%);
+    z-index: 10;
+    -webkit-box-shadow: 0px 0px 17px 4px rgba(255, 255, 255, 0.36);
+    -moz-box-shadow: 0px 0px 17px 4px rgba(255, 255, 255, 0.36);
+    box-shadow: 0px 0px 17px 4px rgba(255, 255, 255, 0.36);
+}
+
+
+
+

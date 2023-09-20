@@ -1,0 +1,27 @@
+.new-arrivals {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    padding: 120px 20px 150px;
+    &__title {
+        margin-bottom: 121px;
+    }
+
+    &__cards {
+        column-gap: 23px;
+    }
+}
+
+@media (min-width: 1149px) {
+    .toggle-card-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 872px) {
+    .toggle-card-2 {
+        display: none;
+    }
+}
+
+
