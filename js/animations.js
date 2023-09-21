@@ -32,5 +32,3 @@ if (animItems.length > 0) {
     }
     animOnScroll();
 }
-
-const signInButton = document.querySelector('.')

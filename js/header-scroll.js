@@ -3,19 +3,22 @@ const defaultOffset = 200;
 const header = document.querySelector('.header');
 const intro = document.querySelector('.intro');
 
-const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
-const containHide = () => header.classList.contains('hide');
+const scrollPosition = () => window.pageYOffset || window.scrollY;
+const containHide = () => header.classList.contains('_scroll');
 
 window.addEventListener('scroll', () => {
-    if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
+    if(scrollPosition() - 10 > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
         //scroll down
         header.classList.add('_scroll');
         intro.classList.add('_scroll');
+        console.log(lastScroll);
     }
-    else if(scrollPosition() < lastScroll && header.classList.contains('_scroll')){
+    
+    if(scrollPosition() + 10 < lastScroll && containHide()){
         //scroll up
         header.classList.remove('_scroll');
         intro.classList.remove('_scroll');
+        console.log(lastScroll);
     }
 
     lastScroll = scrollPosition();
